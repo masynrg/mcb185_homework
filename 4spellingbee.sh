@@ -1,0 +1,1 @@
+gunzip -c ../MCB185/data/dictionary.gz | grep -E "^[zoniacr]{4,}$" | grep "r"
