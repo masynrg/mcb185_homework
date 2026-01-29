@@ -11,3 +11,10 @@ import math
 print(math.log10(100))
 print(math.sqrt(64))
 print(math.pi)
+
+#functions
+
+def pythagoras(a, b):
+    return math.sqrt(a**2 + b**2)
+    
+print(pythagoras(3, 4))
