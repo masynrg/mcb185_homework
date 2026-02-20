@@ -54,3 +54,51 @@ for i in range(len(names)):
     print(nts[i], names[i])
 for nt, name in zip(nts, names):
     print(nt, name)
+
+#lists
+items = list()
+print(items)
+items.append('eggs')
+print(items)
+alph = 'ABCDEFGHIJKLM'
+print(alph)
+aas = list(alph)
+print(aas)
+
+#split & join
+text = 'good day        to you'
+words = text.split()
+print(words)
+
+s = '-'.join(aas)
+print(s)
+s = ''.join(aas)
+print(aas)
+
+#practice problems
+
+def minimum(vals):
+    mimi = vals[0]
+    for val in vals[1:]:
+        if val < mini: mini = val
+    return mini
+#starts at first value, compares next and if smaller, becomes the new value to be compared
+
+def minimax(vals):
+    mini = vals[0]
+    max = vals[0]
+    for val in vals[1:]:
+        if val < mini: mini = val
+        if val > max: max = val
+    return mini, max
+    
+def mean(vals):
+    total = 0
+    for val in vals: total += val
+    return total / len(vals)
+
+import sys
+print(sys.argv)
+
+x = float('hello')
+print(x)
